@@ -1,0 +1,21 @@
+{
+	"version": "0.0.1",
+	"apiVersion": "1.0.0",
+	"author": "ZOMLI",
+	"description": "Measure the high hold time ( between the first low level to the last low level).It will show the sum/mean/max/min of high_hold time in measurement interval",
+	"name": "high hold time Measurement",
+
+
+	"extensions": {
+		"high_hold measure": {
+			"type": "DigitalMeasurement",
+			"entryPoint": "HighHoldTimeMeasurement.HighHoldTimeMeasurement",
+			"metrics": {
+				"highholdsum": { "name": "hight hold Time sum", "notation": "T<sub>Hsum</sub>","units": "s" },
+				"highholdmean": { "name": "hight hold Time mean", "notation": "T<sub>Hmean</sub>","units": "s" },
+				"highholdmax": { "name": "hight hold Time max", "notation": "T<sub>Hmax</sub>","units": "s" },
+				"highholdmin": { "name": "hight hold Time min", "notation": "T<sub>Hmin</sub>","units": "s" }
+			}
+		}
+	}
+}
